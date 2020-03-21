@@ -11,19 +11,21 @@
             #container {
                 margin: auto;
                 max-width: 800px;
+                display: grid;
+                
             }
             #blue {
                 background-color: blue;
-                height: 50px;
+                height: 40px;
                 display: grid;
-                grid-template-columns: 1fr 100px;
+                grid-template-columns: 1fr 500px;
                 padding: 20px;
             }
             .yellow {
                 background-color: yellow;
+                height: 20px;
                 margin: 20px;
-                grid-column: 1;
-                height: 25px;
+                grid-column: ;
             }
             #green {
                 background-color: lime;
@@ -32,14 +34,98 @@
             #red {
                 background-color: red;
                 height: 300px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+            }
+            .yellow1a {
+                background-color: yellow;
+                grid-column: 1/4;
+                padding: 20px;
+                margin: 20px;
+                
+            }
+            .yellow1 {
+                background-color: yellow;
+                grid-row: 2/4;
+                margin: 20px;
+                padding: 20px;
+                margin-top: 0px;
+                
             }
             #blue2 {
                 background-color: blue;
                 height: 600px;
+                grid-template-columns: 1fr 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr 1fr;
+                display: grid;
+            }
+            .yellow2a {
+                background-color: yellow;
+                grid-column: 1/5;
+                padding: auto;
+                margin: 20px;
+                
+                height: 70px;
+            }
+            .yellow2 {
+                background-color: yellow;
+                padding: 20px;
+                margin: 20px;
+                grid-row: auto;
+                height: 100px;
+                margin-bottom: 10px;
+                
             }
             #green2 {
                 background-color: lime;
                 height: 550px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+            }
+            .yellow3a {
+                background-color: yellow;
+                grid-column: 1/4;
+                padding: 20px;
+                margin: 20px;
+                height: 50px;
+            }
+            .yellow3 {
+                background-color: yellow;
+                padding: 10px;
+                margin: 20px;
+                height: 350px;
+                grid-column: 
+            }
+            #red2 {
+                background-color: red;
+                height: 550px;
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+                grid-template-rows: 1fr 1fr 1fr;
+            }
+            .yellow4a {
+                background-color: yellow;
+                grid-column: 1/4;
+                padding: 20px;
+                margin: 20px;
+                height: 30px;
+            }
+            .yellow4b {
+                background-color: yellow;
+                grid-column: 1/2;
+                margin: 20px;
+                padding: 20px;
+                height: 350px;
+                width: 400px;
+            }
+            .yellow4c {
+                background-color: yellow;
+                grid-column: 2/4;
+                padding: 20px;
+                margin: 20px;
+                height: 150px
             }
             #blue3 {
                 background-color: blue;
@@ -51,41 +137,42 @@
     <body>
         <div id="container">
             <div id="blue">
-                <div id="yellow"></div>
-                <div id="yellow"></div>
+                <div class="yellow"></div>
+                <div class="yellow"></div>
             </div>
             <div id="green"></div>
             <div id="red">
-                <div id="yellow1"></div>
-                <div id="yellow1"></div>
-                <div is="yellow1"></div>
-                <div is="yellow1"></div>
+                <div class="yellow1a"></div>
+                <div class="yellow1"></div>
+                <div class="yellow1"></div>
+                <div class="yellow1"></div>
+                
             </div>
             <div id="blue2">
-                <div id="yellow2"></div>
-                <div id="yellow2"></div>
-                <div id="yellow2"></div>
-                <div id="yellow2"></div>
-                <div id="yellow2"></div>
-                <div id="yellow2"></div>
-                <div id="yellow2"></div>
-                <div id="yellow2"></div>
-                <div id="yellow2"></div>
-                <div id="yellow2"></div>
-                <div id="yellow2"></div>
-                <div id="yellow2"></div>
-                <div id="yellow2"></div>
+                <div class="yellow2a"></div>
+                <div class="yellow2"></div>
+                <div class="yellow2"></div>
+                <div class="yellow2"></div>
+                <div class="yellow2"></div>
+                <div class="yellow2"></div>
+                <div class="yellow2"></div>
+                <div class="yellow2"></div>
+                <div class="yellow2"></div>
+                <div class="yellow2"></div>
+                <div class="yellow2"></div>
+                <div class="yellow2"></div>
+                <div class="yellow2"></div>
             </div>
             <div id="green2">
-                <div id="yellow3"></div>
-                <div id="yellow3"></div>
-                <div id="yellow3"></div>
-                <div id="yellow3"></div>
+                <div class="yellow3a"></div>
+                <div class="yellow3"></div>
+                <div class="yellow3"></div>
+                <div class="yellow3"></div>
             </div>
             <div id="red2">
-                <div id="yellow4"></div>
-                <div id="yellow4"></div>
-                <div id="yellow4"></div>
+                <div class="yellow4a"></div>
+                <div class="yellow4b"></div>
+                <div class="yellow4c"></div>
             </div>
             <div id="blue3"></div>
         </div>
